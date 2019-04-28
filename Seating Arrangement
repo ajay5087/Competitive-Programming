@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int T,i,n;
+	cin >> T;
+	int arr[T];
+	for(i=1;i<=T;i++)
+	{
+	    cin>>arr[T];
+	    n=arr[T]%12;
+	    switch(n)
+	    {
+	        case 1:
+	        cout<<arr[T]+11<<" "<<"WS"<<endl;
+	        break;
+	        case 2:
+	        cout<<arr[T]+9<<" "<<"MS"<<endl;
+	        break;
+	        case 3:
+	        cout<<arr[T]+7<<" "<<"AS"<<endl;
+	        break;
+	        case 4:
+	        cout<<arr[T]+5<<" "<<"AS"<<endl;
+	        break;
+	        case 5:
+	        cout<<arr[T]+3<<" "<<"MS"<<endl;
+	        break;
+	        case 6:
+	        cout<<arr[T]+1<<" "<<"WS"<<endl;
+	        break;
+	        case 7:
+	        cout<<arr[T]-1<<" "<<"WS"<<endl;
+	        break;
+	        case 8:
+	        cout<<arr[T]-3<<" "<<"MS"<<endl;
+	        break;
+	        case 9:
+	        cout<<arr[T]-5<<" "<<"AS"<<endl;
+	        break;
+	        case 10:
+	        cout<<arr[T]-7<<" "<<"AS"<<endl;
+	        break;
+	        case 11:
+	        cout<<arr[T]-9<<" "<<"MS"<<endl;
+	        break;
+	        default:
+	        cout<<arr[T]-11<<" "<<"WS"<<endl;
+	        break;
+	    }
+	}
+	return 0;
+
+
+}
